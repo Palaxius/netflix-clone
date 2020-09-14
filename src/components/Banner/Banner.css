@@ -10,11 +10,6 @@
     height: 190px;
 }
 
-/*.banner__title,*/
-/*.banner__description {*/
-/*    background-color: rgba(204, 204, 204, .2);*/
-/*}*/
-
 .banner__title {
     font-size: 3rem;
     font-weight: 800;
@@ -59,8 +54,11 @@
     );
 }
 
-
-
+.banner__youtube {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 
 
 

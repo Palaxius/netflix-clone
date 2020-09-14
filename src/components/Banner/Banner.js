@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './Banner.css'
-import axios from "../../helpers/axios";
+
 import requests, {baseImagesUrl} from "../../helpers/requests";
 import { randomRequest} from "../../helpers/randomRequest";
 import {truncate} from "../../helpers/truncate";
+import axios from "../../helpers/axios";
 
 const Banner = () => {
   const [movie, setMovie] = useState([])
@@ -17,7 +18,6 @@ const Banner = () => {
     fetchData()
   }, [])
 
-  console.log(movie)
 
   return (
     <header
@@ -32,8 +32,8 @@ const Banner = () => {
         <h1 className='banner__title'>{movie?.title || movie?.name || movie?.original_name}</h1>
 
         <div className="banner__buttons">
-          <button className='banner__button'>Play</button>
-          <button className='banner__button'>My list</button>
+            <button className='banner__button'>Play</button>
+            <button className='banner__button'>My list</button>
         </div>
 
         <h2 className='banner__description'>
